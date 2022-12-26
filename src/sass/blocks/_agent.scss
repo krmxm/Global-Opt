@@ -1,0 +1,33 @@
+.agent {
+    padding: 58px 0 75px;
+    background: url('../img/backround_agent.png') no-repeat center center / cover;
+    min-height: 342px;
+    &__icon {
+        position: relative;
+        width: 102px;
+        height: 102px;
+        border: solid 1px #eeeeee;
+        border-radius: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    &__img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+    &__title {
+        margin-bottom: 22px;
+    }
+    &__descr {
+        width: 984px;
+        margin: 0 auto;
+        font-size: 19px;
+        font-weight: 300;
+        line-height: 1.42;
+        text-align: center;
+        color: #fff;
+    }
+}

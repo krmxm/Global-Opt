@@ -1,0 +1,19 @@
+.advantages {
+    padding: 57px 0 51px;
+    background-color: #f3f3f3;
+    &__items {
+        padding: 31px 0 0 0;
+        display: grid;
+        grid-template: repeat(4, minmax(62px, auto)) / repeat(2, minmax(490px, auto));
+        row-gap: 37px;
+        column-gap: 61px;
+    }
+    &__item {
+        display: grid;
+        grid-template-columns: 64px 447px;
+        column-gap: 13px;
+    }
+    &__icon {
+        margin: 2px 0 0 0;
+    }
+}

@@ -1,0 +1,72 @@
+.title {
+    font-size: 26px;
+    color: #2e2e2e;
+    font-weight: bold;
+    line-height: 0.88;
+    text-align: center;
+    text-transform: uppercase;
+    &_white {
+        color: #fff;
+        text-transform: none;
+    }
+    &_fz24 {
+        font-size: 24px;
+        font-weight: 300;
+        text-align: center;
+        color: #fff;
+        line-height: normal;
+    }
+    &_fz28 {
+        font-size: 28px;
+        font-weight: normal;
+        line-height: 0.82;
+        color: #3a3a3a;
+        text-transform: none;
+    }
+    &_fz42 {
+        font-size: 42px;
+        font-weight: normal;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: Roboto condensed;
+        line-height: normal;
+    }
+    &_fz72 {
+        font-size: 72px;
+        font-weight: bold;
+        font-family: Roboto condensed;
+        color: $main-color;
+        margin: 26px 0 0;
+        text-transform: uppercase;
+        line-height: normal;
+    }
+}
+
+.subtitle-item {
+    font-size: 16px;
+    font-weight: bold;
+    color: $main-color;
+    line-height: 1.57;
+    &_fz18 {
+        font-size: 18px;
+    }
+}
+
+.descr-item {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.57;
+    color: #3a3a3a;
+}
+
+.subtitle {
+    display: block;
+    width: 879px;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 1.14;
+    color: #2e2e2e;
+}

@@ -1,0 +1,39 @@
+.work {
+    padding: 51px 0 57px;
+    min-height: 617px;
+    &__subtitle {
+        display: block;
+        width: 879px;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 21px;
+        font-weight: 300;
+        line-height: 1.14;
+        color: #2e2e2e;
+    }
+    &__items {
+        padding-top: 37px;
+        display: grid;
+        grid-template-columns: repeat(3, 360px);
+        column-gap: 30px;
+    }
+    &__item {
+        display: grid;
+        grid-template-columns: 360px;
+        grid-template-rows: 210px, minmax(131px, auto);
+        row-gap: 28px;
+        &__subtitle {
+            text-align: center;
+        }
+        &__descr {
+            text-align: center;
+        }
+    }
+    &__photo {
+        width: 360px;
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/slick';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
+@import 'base/variables';
+@import 'base/mixins';
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: block;
+    max-width: 1140px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.slick-slide {
+    transform: scale(0.8);
+    opacity: 0.3;
+    transition: all ease 0.5s;
+}
+
+.skick-slide .slick-current {
+    transform: scale(1);
+    opacity: 1;
+}
+
+ul {
+    padding-left: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+}
+
+@import 'blocks/promo';
+@import 'blocks/button';
+@import 'blocks/title';
+@import 'blocks/advantages';
+@import 'blocks/work';
+@import 'blocks/agent';
+@import 'blocks/price';
+@import 'blocks/services';
+@import 'blocks/divider';
+@import 'blocks/consultacion';
+@import 'blocks/forms';
+@import 'blocks/managers';
+@import 'blocks/algorithm';
+@import 'blocks/reviews';
+@import 'blocks/carousel';
+
+
+/* шрифт Roboto Condensed скорее всего нужно будет подключать напрямую к части макета */
