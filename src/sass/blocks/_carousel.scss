@@ -1,67 +1,15 @@
-/* .carousel {
-    padding: 81px 0;
-    &__inner {
-        position: relative;
-        width: 750px;
-        margin: 0 auto;
-        img {
-            width: 100%;
-        }
-    }
-    .slick-slider {
-        max-width: 100%;
-    }
-    .slick-prev, .slick-next  {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: -66px;
-        border: none;
-        background-color: #fff;
-        img {
-            width: 31px;
-            height: 50px;
-        }
-    }
-    .slick-next  {
-        right: -66px;
-        left: auto;
-    }
-    .slick-dots {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .slick-dots li {
-        list-style: none;
-        margin: 0 10px;
-    }
-    .slick-dots li button {
-        font-size: 0;
-        width: 10px;
-        height: 10px;
-        border-color: #6b6b6b;
-        border-radius: 50%;
-    }
-    .slick-dots li[class="slick-active"] button {
-        box-shadow: 3px 3px 20px $main-color;
-        border-color: $main-color
-    }
-} */
-
-
 .carousel {
     &__inner {
-/*         width: 1413px; */
-        width: 601px;
+        display: block;
+        position: relative;
+        width: 1412px;
         margin: 0 auto;
         overflow: visible;
     }
-/*     &__wrapper {
+    &__wrapper {
         width: 601px;
         margin: 0 auto;
-        overflow: visible;
-    } */
+    }
     &__img {
         display: block;
         width: 114px;
@@ -74,7 +22,12 @@
         }
     }
     &__text {
-        text-align: center;
+        text-align: justify;
+        text-align-last: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
     &__subtitle {
         text-align: center;
@@ -83,13 +36,38 @@
         line-height: 1.57;
         color: #3a3a3a;
         margin-bottom: 12px;
-
     }
     &__descr {
-        font-size: 14px;
+        font-size: 14.1px;
         font-weight: 300;
-        line-height: 1.57;
-        color: #3a3a3a;
-        text-align: center;
+        line-height: 22px;
+        width: 600px;
+        margin: 0;
     }
+}
+
+.slick-slide {
+    transform: scale(.5);
+    opacity: .3;
+    transition: all .3s ease-in;
+}
+
+.slick-current {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.slick-prev, .slick-next {
+    position: absolute;
+    width: 15px;
+    height: 47px;
+    top: 15%;
+    left: calc(50% - 100px);
+    transform: translateY(-25%);
+    background-color: #fff;
+    border: none;
+}
+.slick-next {
+    right: calc(50% - 100px);
+    left: auto;
 }
