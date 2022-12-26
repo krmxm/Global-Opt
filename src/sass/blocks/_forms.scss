@@ -25,6 +25,11 @@
         text-align: left;
         /* color: rgba(16, 16, 16, 0.7); */
     }
+    &_questions {
+        height: 45px;
+        border: none;
+        padding: 18px 0 8px 0;
+    }
 }
 .wrap {
     display: flex;
