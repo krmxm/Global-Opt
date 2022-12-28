@@ -10,10 +10,23 @@
     color: #fff;
     border-radius: 20px;
     text-transform: uppercase;
+    transition: all .3s ease-in-out;
     &:hover {
         background: rgba(0,0,0,0);
         color: $main-color;
         box-shadow: inset 0 0 0 3px $main-color;
+        transition: all .3s ease;
+      }
+    /* &:focus {
+        background: rgba(0,0,0,0);
+        color: $focus-color;
+        box-shadow: inset 0 0 0 5px $focus-color;
+        border: none;
+    } */
+    &:active {
+        box-shadow: inset 0 0 0 5px $focus-color;
+        transform: translateY(2px);
+        filter: saturate(150%);
       }
     &_main {
         display: block;
@@ -24,7 +37,7 @@
         line-height: 1.17;
         margin: 0 auto;
     }
-    &_consultation {
+    &_midle {
         width: 180px;
     }
 }

@@ -1,6 +1,6 @@
 .feed-form {
     padding: 68px 0 53px;
-    /* height: 45px; */
+    height: 45px;
     display: grid;
     grid-template-columns: repeat(3, 268px);
     column-gap: 6px;
@@ -23,15 +23,37 @@
         font-weight: 300;
         line-height: 1.85;
         text-align: left;
-        /* color: rgba(16, 16, 16, 0.7); */
+        color: rgba(16, 16, 16, 0.7);
+    }
+    input:focus { 
+        outline: none;
+        border-color: $main-color;
+        box-shadow: 0 0 1px $main-color;
     }
     &_questions {
         height: 45px;
         border: none;
-        padding: 18px 0 8px 0;
+        padding: 0;
     }
 }
 .wrap {
     display: flex;
     flex-direction: column;
+}
+.modal-form {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    input {
+        height: 54px;
+        background: #fff;
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 20px;
+        padding: 0 20px;
+        font-weight: 400;
+        font-size: 14px;
+        color: #4B4B4B;
+    }
 }

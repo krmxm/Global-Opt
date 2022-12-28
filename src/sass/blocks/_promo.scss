@@ -80,6 +80,7 @@
         }
     }
     &__link {
+        position: relative;
         font-size: 15px;
         line-height: 17px;
         color: #fff;
@@ -87,33 +88,31 @@
         font-weight: 400;
         color: #fff;
         text-decoration: none;
-        &:hover {
-            border-bottom: 1.2px solid;
-            color: $main-color;
+        transition: all 0.5s ease-out;
+        &:before {
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            background: $main-color;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+            transition: all .3s ease-in;
         }
-    }
-    &__info {
-        display: flex;
-        
-    }
-    &__contacts {
-        margin-right: 19px;
-    }
-    &__text {
-        font-size: 14px;
-        font-weight: 300;
-        text-align: right;
-        color: #fff;
-    }
-    &__phone {
-        font-size: 19px;
-        font-weight: bold;
-        text-align: right;
-        color: #fff;
-        text-decoration: none;
         &:hover {
-            border-bottom: 1.2px solid;
             color: $main-color;
-        }
+            &:before {
+                opacity: 1;
+                bottom: -3px;
+            }
+       }
+       &:active {
+            color: $focus-color;
+            transition: all .1s ease;
+            &:before {
+                background: $focus-color;
+            }
+       }
     }
 }
