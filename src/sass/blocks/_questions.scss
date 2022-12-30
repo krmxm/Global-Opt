@@ -1,9 +1,8 @@
 .questions {
     background: url('../img/backround_questions.png') no-repeat center center / cover;
     &__block {
+        background-color: rgb(255, 255, 255, 0.7);
         max-width: 896px;
-        min-height: 297px;
-        padding: 62px 0 79px;
         margin: 0 auto;
     }
     &__header {
@@ -24,22 +23,7 @@
        text-transform: uppercase;
        padding-bottom: 12px;
     }
-    &__body {
-        background-color: rgb(255, 255, 255, 0.7);
-        z-index: 5;
-    }
     &__form {
-        padding: 18px 0 17px 0;
-        display: grid;
-        grid-template-rows: 45px 71px;
-        row-gap: 8px;
-    }
-    &__textarea {
-        display: block;
-        padding-bottom: 17px;
-        width: 813px;
-        height: 71px;
-        margin: 0 auto;
         textarea {
             width: 813px;
             height: 73px;
@@ -59,18 +43,22 @@
             font-weight: 300;
             color: #101010;
             background: #fff;
-            z-index: 10;
+        }
+        textarea:focus { 
+            outline: none;
+            border-color: $main-color;
+            box-shadow: 0 0 1px $main-color;
         }
     }
-    textarea:focus { 
-        outline: none;
-        border-color: $main-color;
-        box-shadow: 0 0 1px $main-color;
+
+    &__input {
+        input {
+            margin: 17px 0 10px;
+        }
     }
-    &__btn-block {
-        padding-bottom: 25px ;
-    }
+
     &__btn {
+        padding-bottom: 25px ;
         display: block;
         margin: 0 auto;
     }

@@ -52,4 +52,6 @@ $(document).ready(function(){
       $('.pageup').fadeOut();
     }
   });
+  
+  $('.feed-form').validate();
 });
