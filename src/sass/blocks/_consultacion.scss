@@ -1,15 +1,25 @@
 .consultation {
     padding: 56px 0 80px;
+    &__form {
+        height: 166px;
+        position: relative;
+        border: 1px solid #c4c4c4;
+        border-right: 1px solid #909090;
+        border-left: 1px solid #909090;
+    }
+    &__input {
+        margin: 68px 0 53px 0;
+    }
     &__title {
         margin-bottom: 71px;
     }
     &__wrap-img {
-        position: absolute;
-        left: 50%;
-        top: -90%;
-        transform: translate(-50%, 90%);
-        padding: 0 10px;
-        background-color: #fff;
+		position: absolute;
+		padding: 0 10px;
+		background-color: #fff;
+		top: 0%;
+		left: 50%;
+		transform: translate(-50%, -50%);
         /* z-index: 10; */
     }
     &__icon {

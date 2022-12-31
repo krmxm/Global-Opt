@@ -53,5 +53,7 @@ $(document).ready(function(){
     }
   });
   
-  $('.feed-form').validate();
+  // Validate
+  
+ $('.feed-form').validate();
 });

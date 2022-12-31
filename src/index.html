@@ -277,26 +277,29 @@
 
             <div class="consultation">
                 <h2 class="title title_fz28 consultation__title">Заказать бесплатную консультацию</h2>
-                <form action="#" class="feed-form">
+                <form action="#" class="feed-form consultation__form">
                     <div class="consultation__wrap-img">
                         <div class="consultation__icon">
                             <img src="icons/price/consultation.png" alt="consultation" class="consultation__img">
                         </div>
                     </div>
-                    <div class="wrap">
-                        <input name="name" required placeholder="Ваше имя..." type="text">
-                        <label id="name-error" class="error" for="name"></label>
-                    </div>
-                    <div class="wrap">
-                        <input name="phone" required placeholder="Ваш номер телефона..." class="valid" aria-invalid="false">
-                        <label id="phone-error" class="error" for="phone"></label>
-                    </div>
-                    <div class="wrap">
-                        <input name="email" required placeholder="Ваш e-mail..." type="email">
-                        <label id="email-error" class="error" for="email"></label>
-                    </div>
-                    <div class="form__btn consultation__button">
-                        <button data-modal="thanks" class="button button_midle">Отправить заявку</button>
+
+                    <div class="feed-form__input consultation__input">
+                        <div class="wrap">
+                            <input name="name" placeholder="Ваше имя..." type="text">
+                            <label id="name-error" class="error" for="name"></label>
+                        </div>
+                        <div class="wrap">
+                            <input name="phone" placeholder="Ваш номер телефона..." class="valid" aria-invalid="false">
+                            <label id="phone-error" class="error" for="phone"></label>
+                        </div>
+                        <div class="wrap">
+                            <input name="email" placeholder="Ваш e-mail..." type="email">
+                            <label id="email-error" class="error" for="email"></label>
+                        </div>
+                        <div class="form__btn consultation__button">
+                            <button data-modal="thanks" class="button button_midle">Отправить заявку</button>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -418,37 +421,33 @@
     <section class="questions">
         <div class="container">
             <div class="questions__block">
-                <div class="questions__header">
-                    <div class="questions__text">
-                        <div class="title title_fz19 questions__title">Остались вопросы?</div>
-                        <div class="title title_fz14 questions__subtitle">Напишите нам!</div>
-                    </div>
-                </div>
-                
-                <div class="questions__body">
-                    <form action="# "class="feed-form questions__form">
-                        <div class="feed-form__input questions__input">
-                            <div class="wrap">
-                                <input name="name" required placeholder="Ваше имя..." type="text">
-                                <label id="name-error" class="error" for="name"></label>
-                            </div>
-                            <div class="wrap">
-                                <input name="phone" required placeholder="Ваш номер телефона..." class="valid" aria-invalid="false">
-                                <label id="phone-error" class="error" for="phone"></label>
-                            </div>
-                            <div class="wrap">
-                                <input name="email" required placeholder="Ваш e-mail..." type="email">
-                                <label id="email-error" class="error" for="email"></label>
-                            </div>
-                        </div>
-                        
-                        <textarea name="text" required id="textarea" placeholder="Сообщение..."></textarea>
-                        <div class="questions__btn">
-                            <button data-modal="thanks" class="button button_midle">Отправить заявку</button>
-                        </div>
-                    </form>
 
-                </div>
+                <div class="questions__header">
+                    <h3 class="title title_fz19 questions__title">Остались вопросы?</р>
+                    <div class="title title_fz14 questions__subtitle">Напишите нам!</div>
+                </div>  
+                
+                <form action="# "class="feed-form questions__form">
+                    <div class="feed-form__input questions__input">
+                        <div class="wrap">
+                            <input name="name" placeholder="Ваше имя..." type="text">
+                            <label id="name-error" class="error" for="name"></label>
+                        </div>
+                        <div class="wrap">
+                            <input name="phone" placeholder="Ваш номер телефона..." class="valid" aria-invalid="false">
+                            <label id="phone-error" class="error" for="phone"></label>
+                        </div>
+                        <div class="wrap">
+                            <input name="email" placeholder="Ваш e-mail..." type="email">
+                            <label id="email-error" class="error" for="email"></label>
+                        </div>
+                    </div>
+                    
+                    <textarea name="text" id="textarea" placeholder="Сообщение..."></textarea>
+                    <div class="questions__btn"> <!-- Class=form__btn -->
+                        <button data-modal="thanks" class="button button_midle">Отправить заявку</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
@@ -493,13 +492,13 @@
     </footer>
 
     <div class="overlay">
-        <div class="modal" id="consultation">
+        <div class="modal">
             <div class="modal__close">&times;</div>
             <div class="modal__subtitle">Просто заполните форму заявки</div>
             <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
             <form class="modal-form" action="#">
-                <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваш телефон">
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" placeholder="Ваш телефон">
 
                 <button data-modal="thanks" class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
