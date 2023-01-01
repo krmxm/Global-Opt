@@ -1,7 +1,7 @@
 .consultation {
     padding: 56px 0 80px;
     &__form {
-        height: 166px;
+        min-height: 166px;
         position: relative;
         border: 1px solid #c4c4c4;
         border-right: 1px solid #909090;
