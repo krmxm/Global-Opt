@@ -1,0 +1,104 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 992px;
+    }
+    .header {
+        &:last-child {
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+    }
+    .info {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        &__text {
+            display: none;
+            text-align: center;
+        }
+        &__phone {
+            text-align: center;
+        }
+        &__contacts {
+            margin: 0;
+        }
+    }
+    .title {
+        &_fz72 {
+            font-size: 65px;
+        }
+        &_fz42 {
+            font-size: 38px;
+        }
+    }
+    .promo {
+        &__icons {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__icon {
+                margin: 20px 40px 0 40px;
+            }
+        }
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    .promo {
+        padding: 60px 0 82px;
+        &__descr {
+            padding: 30px 0 38px;
+        }
+    }
+    .header {
+        justify-content: space-around;
+        align-items: start;
+        &__menu {
+            position: absolute;
+            top: -50px;
+            right: 60px;
+            margin-bottom: 50px;
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+    }
+    .title {
+        &_fz72 {
+            font-size: 50px;
+        }
+        &_fz42 {
+            font-size: 29px;
+        }
+        &_fz24 {
+            font-size: 17px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+    .header {
+        justify-content: start;
+        &__logo {
+            margin-right: 80px;
+        }
+        &__menu {
+            position: fixed;
+            flex-direction: column;
+            margin-bottom: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 0;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            padding: 20px 15px;
+        }
+    }
+    .promo {
+        padding: 20px 0 52px;
+    }
+}

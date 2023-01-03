@@ -29,15 +29,27 @@
     &__icons {
         display: flex;
         justify-content: space-between;
+        align-items: start;
+        align-content: start;
+        margin-top: 27px;
         margin-bottom: 39px;
     }
     &__icon {
+        text-align: center;
         width: 260px;
+        /* max-height: 130px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
     }
     &__img {
+        width: 67px;
+        height: 63px;
         display: block;
         margin: 0 auto;
         margin-bottom: 16px;
+        align-items: start;
     }
     &__text {
         font-size: 16px;
