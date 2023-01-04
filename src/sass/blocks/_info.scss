@@ -43,4 +43,28 @@
         }
    }
     }
+    &__phone-media {
+        display: none;
+        position: relative;
+        font-size: 19px;
+        font-weight: bold;
+        text-align: right;
+        color: #fff;
+        text-decoration: none;
+        transition: all .3s ease-in;
+        &:hover {
+            color: $main-color;
+            &:before {
+                opacity: 1;
+                bottom: -3px;
+            }
+       }
+       &:active {
+        color: $focus-color;
+        transition: all .1s ease;
+        &:before {
+            background: $focus-color;
+        }
+        }
+    }
 }

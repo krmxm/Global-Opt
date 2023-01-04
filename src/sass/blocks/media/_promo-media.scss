@@ -1,7 +1,4 @@
 @media (max-width: 1200px) {
-    .container {
-        max-width: 992px;
-    }
     .header {
         &:last-child {
             justify-content: flex-start;
@@ -23,14 +20,6 @@
             margin: 0;
         }
     }
-    .title {
-        &_fz72 {
-            font-size: 65px;
-        }
-        &_fz42 {
-            font-size: 38px;
-        }
-    }
     .promo {
         &__icons {
             flex-wrap: wrap;
@@ -43,9 +32,6 @@
 }
 
 @media (max-width: 991px) {
-    .container {
-        max-width: 720px;
-    }
     .promo {
         padding: 60px 0 82px;
         &__descr {
@@ -53,52 +39,128 @@
         }
     }
     .header {
+        position: relative;
         justify-content: space-around;
         align-items: start;
-        &__menu {
-            position: absolute;
-            top: -50px;
-            right: 60px;
-            margin-bottom: 50px;
-            background-color: rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-        }
     }
-    .title {
-        &_fz72 {
-            font-size: 50px;
-        }
-        &_fz42 {
-            font-size: 29px;
-        }
-        &_fz24 {
-            font-size: 17px;
-        }
+    .menu {
+        position: absolute;
+        top: -50px;
+        right: 60px;
+        margin-bottom: 50px;
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
     }
 }
 @media (max-width: 767px) {
-    .container {
-        max-width: 540px;
-    }
     .header {
-        justify-content: start;
+        width: 75%;
+        justify-content: space-around;
         &__logo {
-            margin-right: 80px;
+            max-width: 72px;
         }
-        &__menu {
-            position: fixed;
+    }
+    .menu {
+        position: fixed;
+        margin-bottom: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 0;
+        top: 0;
+        left: -100%;
+        width: 78%;
+        height: 100vh;
+        padding: 20px 15px;
+        transition: 0.8s all;
+        &__items {
             flex-direction: column;
-            margin-bottom: 0;
-            background-color: rgba(0, 0, 0, 0.8);
-            border-radius: 0;
-            top: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-            padding: 20px 15px;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+        }
+        &__item {
+            margin-bottom: 15px;
+        }
+        &_active {
+            left: 0;
+        }
+        &__item {
+            padding-right: 0;
+            border: none;
+            font-size: 20px;
+            margin: 20px 0;
+            &::after {
+                display: none;
+            }
+        }
+        &__link {
+            padding: 10px 10px;
+            font-size: 20px;
+        }
+    }
+    .info {
+        &__phone {
+            position: static;
+            &:before {
+                display: none;
+            }
         }
     }
     .promo {
         padding: 20px 0 52px;
+    }
+    .hamburger {
+        display: block;
+    }
+}
+@media (max-width: 575px) {
+    .header {
+        &__logo {
+            max-width: 55px;
+            
+        }
+    }
+    .info {
+        &__phone {
+            display: none;
+            font-size: 13px;
+        }
+        &__phone-media {
+            position: static;
+            display: block;
+            font-size: 13px;
+        }
+    }
+    .button {
+        width: 135px;
+        height: 29px;
+        font-size: 10px;
+    }
+    .promo {
+        padding: 20px 0 20px;
+        &__descr {
+           padding: 30px 0; 
+        }
+        &__divider {
+            margin-bottom: 17px;
+        }
+        &__icons {
+            margin-top: 17px;
+            margin-bottom: 25px;
+        }
+       /*  &__icon {
+            margin: 10px 40px 0 40px;
+        } */
+        &__img {
+            width: 60px;
+            height: 56px;
+        }
+        &__text {
+            font-size: 12px;
+        }
+    }
+    .menu {
+        &__link {
+            font-size: 18px;
+        }
     }
 }
