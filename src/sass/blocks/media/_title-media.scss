@@ -11,7 +11,7 @@
 @media (max-width: 991px) {
     .title {
         &_fz72 {
-            font-size: 50px;
+            font-size: 51px;
         }
         &_fz42 {
             font-size: 29px;
@@ -19,6 +19,9 @@
         &_fz24 {
             font-size: 17px;
         }
+    }
+    .subtitle {
+        font-size: 16px;
     }
 }
 @media (max-width: 767px) {
@@ -37,7 +40,7 @@
 }
 @media (max-width: 575px) {
     .title {
-        font-size: 15px;
+        font-size: 14px;
         &_fz72 {
             font-size: 28px;
             margin: 9px 0 9px;
@@ -47,6 +50,12 @@
         }
         &_fz24 {
             font-size: 11px;
+        }
+    }
+    .subtitle {
+        font-size: 13px;
+        br {
+            display: none;
         }
     }
     .subtitle-item {

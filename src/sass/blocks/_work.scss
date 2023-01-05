@@ -30,8 +30,11 @@
             text-align: center;
         }
     }
+    &__items-media {
+        display: none;
+    }
     &__photo {
-        width: 360px;
+        width: 100%;
         img {
             width: 100%;
         }

@@ -28,6 +28,7 @@
 }
 @media (max-width: 575px) {
     .advantages {
+        padding: 20px 0 30px;
         &__items {
             grid-template: repeat(4, minmax(62px, auto)) / 1fr;
             row-gap: 20px;
