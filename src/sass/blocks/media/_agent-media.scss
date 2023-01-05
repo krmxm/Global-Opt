@@ -1,0 +1,17 @@
+@media (max-width: 1200px) {
+    // no
+}
+@media (max-width: 991px) {
+    //no
+}
+@media (max-width: 767px) {
+    //no
+}
+@media (max-width: 575px) {
+    .agent {
+        padding: 30px 0 30px;
+        &__descr {
+            font: 12px;
+        }
+    }
+}
