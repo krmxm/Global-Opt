@@ -4,10 +4,10 @@
 		grid-template-columns: repeat(3, minmax(268px, auto));
 		justify-content: center;
 		column-gap: 6px;
-        .wrap {
+        /* .wrap {
 			display: flex;
 			flex-direction: column;
-		}
+		} */
         input {
             outline: 1px solid rgba(0, 0, 0, 0.21);
             width: 100%;

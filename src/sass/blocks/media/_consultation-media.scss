@@ -1,0 +1,12 @@
+@media (max-width: 575px) {
+    .consultation {
+        padding-top: 30px;
+        &__icon {
+            width: 90px;
+            height: 90px;
+        }
+        &__title {
+            margin-bottom: 61px;
+        }
+    }
+}

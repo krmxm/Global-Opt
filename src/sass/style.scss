@@ -34,7 +34,6 @@ h1, h2, h3, h4, h5 {
 @import 'blocks/work';
 @import 'blocks/agent';
 @import 'blocks/price';
-@import 'blocks/services';
 @import 'blocks/divider';
 @import 'blocks/consultacion';
 @import 'blocks/forms';
@@ -55,6 +54,10 @@ h1, h2, h3, h4, h5 {
 @import 'blocks/media/advantages-media';
 @import 'blocks/media/work-media';
 @import 'blocks/media/agent-media';
+@import 'blocks/media/price-media';
+@import 'blocks/media/consultation-media';
+@import 'blocks/media/forms-media';
+@import 'blocks/media/algorithm-media';
 @import 'blocks/media/pageup-media';
 
 

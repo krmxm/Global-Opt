@@ -7,12 +7,12 @@ $(document).ready(function(){
     nextArrow: '<button type="button" class="slick-next"><img src="img/slider/nextarrow.png"></img></button>',
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1200,
         settings: {
-          arrows: false,
           centerMode: true,
           centerPadding: '40px',
-          slidesToShow: 3
+          dots: true,
+          slidesToShow: 1
         }
       },
       {

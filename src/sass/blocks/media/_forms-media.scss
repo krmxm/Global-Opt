@@ -1,0 +1,30 @@
+@media (max-width: 991px) {
+    .feed-form {
+        &__input {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(230px, auto));
+            justify-content: center;
+            column-gap: 6px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .feed-form {
+        &__input {
+            display: grid;
+            grid-template-columns: 280px;
+            justify-content: center;
+            row-gap: 15px;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .feed-form {
+        &__input {
+            display: grid;
+            grid-template-columns: 240px;
+            justify-content: center;
+            row-gap: 10px;
+        }
+    }
+}
