@@ -1,0 +1,30 @@
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 991px) {
+
+}
+@media (max-width: 767px) {
+    .questions {
+        &__input {
+            margin: 17px;
+            input {
+                margin: 0;
+            }
+        }
+        textarea {
+            margin-top: 17px;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .questions {
+        padding: 30px 0 40px;
+        &__title {
+            padding-top: 10px;
+        }
+        &__subtitle {
+            padding-bottom: 8px;
+        }
+    }
+}
